@@ -2,6 +2,7 @@ options(stringsAsFactors = F, scipen = 99)
 rm(list = ls()); gc()
 require(data.table)
 
+# Load gender and age data
 label_train <- fread("/home/mattias/R/Kaggle/TalkingData/gender_age_train.csv",
                      colClasses = c("character", "character",
                                   "integer", "character"))
