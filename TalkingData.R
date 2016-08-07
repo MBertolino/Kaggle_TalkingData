@@ -13,6 +13,7 @@ label <- rbind(label_train, label_test)
 setkey(label, device_id)
 rm(label_test, label_train); gc()
 
+# Load brand and device model data
 brand <- fread("/home/mattias/R/Kaggle/TalkingData/phone_brand_device_model.csv",
                colClasses = c("character", "character", "character"))
 setkey(brand, device_id)
